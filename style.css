@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Light blue background */
+}
+
+.resume-container {
+    background-color: white;
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left section */
+.left-section {
+    background-color: #c1daeb; 
+    color: white;
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+    border-right: 5px solid #3711cf;                   
+    border-radius: 10px 0 0 10px;   
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #0d0301; /* Coral border */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 20px 0 10px;
+    color: #00796b; /* Teal for headers */
+    padding: 10px;
+    border-left: 5px solid #ff7043; /* Coral accent */
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Right Section */
+.right-section {
+    padding: 20px;
+    width: 65%;
+    color: #424242; /* Dark gray text */
+}
+
+/* Button */
+button {
+    background-color: #58c1e4; /* Coral button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #008ec6; /* Lighter coral on hover */
+}
+
+p {
+    color: #0d0301;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .left-section {
+        border-bottom: 5px solid #3711cf;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+    
